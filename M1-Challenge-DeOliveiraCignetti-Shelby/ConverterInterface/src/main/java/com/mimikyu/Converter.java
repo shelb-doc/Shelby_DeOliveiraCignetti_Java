@@ -1,7 +1,6 @@
 package com.mimikyu;
 
 public interface Converter {
-
     /**
      * This method converts the given number into its corresponding month.
      * @param monthNumber the number you wish to convert to a month
@@ -18,3 +17,4 @@ public interface Converter {
     String convertDay(int dayNumber);
 
 }
+

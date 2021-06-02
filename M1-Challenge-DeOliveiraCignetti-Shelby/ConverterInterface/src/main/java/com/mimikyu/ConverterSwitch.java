@@ -1,75 +1,108 @@
 package com.mimikyu;
 
-
-
 import java.util.Scanner;
 
-public class ConverterSwitch {
-    public static void main(String[] args) {
+public class ConverterSwitch implements Converter{
+    String convertMonth(int monthNumber){
         Scanner in = new Scanner(System.in);
 
         System.out.print("Enter month's number: ");
 
-        int monthNumber;
-
-        monthNumber = in.nextInt();
-
-
 //      Month
         switch (monthNumber){
             case 1:
-                System.out.println("January");
+                return "January";
                 break;
 
             case 2:
-                System.out.println("February");
+                return "February";
                 break;
 
             case 3:
-                System.out.println("March");
+                return "March";
                 break;
 
             case 4:
-                System.out.println("April");
+                return "April";
                 break;
 
             case 5:
-                System.out.println("May");
+                return "May";
                 break;
 
             case 6:
-                System.out.println("June");
+                return "June";
                 break;
 
             case 7:
-                System.out.println("July");
+                return "July";
                 break;
 
             case 8:
-                System.out.println("August");
+                return "August";
                 break;
 
             case 9:
-                System.out.println("September");
+                return "September";
                 break;
 
             case 10:
-                System.out.println("October");
+                return "October";
                 break;
 
             case 11:
-                System.out.println("November");
+                return "November";
                 break;
 
             case 12:
-                System.out.println("December");
+                return "December";
                 break;
 
             default:
-                System.out.println("Invalid month.");
+                return "Invalid month.";
+                break;
+        }
+
+    }
+    String convertDay(int dayNumber){
+//      Day
+        switch (dayNumber){
+            case 1:
+                return "Sunday";
                 break;
 
+            case 2:
+                return "Monday";
+                break;
 
+            case 3:
+                return "Tuesday";
+                break;
+
+            case 4:
+                return "Wednesday";
+                break;
+
+            case 5:
+                return "Thursday";
+                break;
+
+            case 6:
+                return "Friday";
+                break;
+
+            case 7:
+                return "Saturday";
+                break;
+
+            default:
+                return "Invalid Day.";
+                break;
         }
+
     }
+
 }
+
+
+
