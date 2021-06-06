@@ -1,15 +1,20 @@
 public class Address {
 
-    private String street;
+    private String street1;
+    private String street2;
+
+
     private String city;
     private String state;
     private String zipcode;
-//TODO STREET 2
 
-    public void setStreet(String street) {
-        this.street = street;
+    public void setStreet1(String street) {
+        this.street1 = street;
     }
 
+    public void setStreet2(String street2) {
+        this.street2 = street2;
+    }
     public String getCity() {
         return city;
     }
