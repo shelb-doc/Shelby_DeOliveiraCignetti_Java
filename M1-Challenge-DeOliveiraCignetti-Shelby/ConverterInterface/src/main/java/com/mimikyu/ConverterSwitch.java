@@ -65,6 +65,9 @@ public class ConverterSwitch implements Converter{
 
     }
     String convertDay(int dayNumber){
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Enter a number to get the name of the Day: ");
 //      Day
         switch (dayNumber){
             case 1:
