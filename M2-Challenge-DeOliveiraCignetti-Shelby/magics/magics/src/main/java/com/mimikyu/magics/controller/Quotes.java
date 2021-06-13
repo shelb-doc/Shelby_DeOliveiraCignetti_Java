@@ -1,5 +1,6 @@
 package com.mimikyu.magics.controller;
 
+import com.mimikyu.magics.models.Quotes;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ import java.util.List;
 import java.util.Random;
 
 @RestController
-public class Quotes {
+class QuotesController{
     Random random = new Random();
 
     private static List<Quotes> quotesList = new ArrayList<>(Arrays.asList(
@@ -29,7 +30,7 @@ public class Quotes {
             new Quotes(10,"Audrey Hepburn","Nothing is impossible, the word itself says, ‘I'm possible!")
     ));
 
-    @RequestMapping(value = "/quotes", method = RequestMethod.GET)
+    @RequestMapping(value = "/quote", method = RequestMethod.GET)
     @ResponseStatus(value = HttpStatus.OK)
     public Quotes getRandomQuote(){
         int randomQuoteIndex = random.nextInt(quotesList.size());

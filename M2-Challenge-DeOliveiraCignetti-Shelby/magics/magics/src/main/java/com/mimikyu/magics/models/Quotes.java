@@ -3,6 +3,12 @@ package com.mimikyu.magics.models;
 import java.util.Objects;
 
 public class Quotes {
+    public Quotes(int id, String quote, String author) {
+        this.id = id;
+        this.quote = quote;
+        this.author = author;
+    }
+
     private int id;
     private String quote;
     private String author;
@@ -52,4 +58,5 @@ public class Quotes {
                 ", author='" + author + '\'' +
                 '}';
     }
+
 }
